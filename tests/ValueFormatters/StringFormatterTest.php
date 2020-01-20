@@ -47,7 +47,7 @@ class StringFormatterTest extends ValueFormatterTestBase {
 	 */
 	public function testInvalidFormat( $value ) {
 		$formatter = new StringFormatter();
-		$this->setExpectedException( InvalidArgumentException::class );
+		$this->expectException( InvalidArgumentException::class );
 		$formatter->format( $value );
 	}
 
