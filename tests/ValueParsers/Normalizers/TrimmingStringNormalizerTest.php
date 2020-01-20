@@ -40,7 +40,7 @@ class TrimmingStringNormalizerTest extends PHPUnit_Framework_TestCase {
 	 */
 	public function testNormalizeException( $value ) {
 		$normalizer = new TrimmingStringNormalizer();
-		$this->setExpectedException( 'InvalidArgumentException' );
+		$this->expectException( 'InvalidArgumentException' );
 		$normalizer->normalize( $value );
 	}
 
