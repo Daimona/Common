@@ -39,7 +39,7 @@ class NullStringNormalizerTest extends PHPUnit_Framework_TestCase {
 	 */
 	public function testNormalizeException( $value ) {
 		$normalizer = new NullStringNormalizer();
-		$this->setExpectedException( InvalidArgumentException::class );
+		$this->expectException( InvalidArgumentException::class );
 		$normalizer->normalize( $value );
 	}
 
