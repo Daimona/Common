@@ -59,7 +59,7 @@ class MonolingualTextValueTest extends DataValueTest {
 	 * @dataProvider invalidArrayProvider
 	 */
 	public function testNewFromArrayWithInvalidArray( array $array ) {
-		$this->setExpectedException( IllegalValueException::class );
+		$this->expectException( IllegalValueException::class );
 		MonolingualTextValue::newFromArray( $array );
 	}
 
